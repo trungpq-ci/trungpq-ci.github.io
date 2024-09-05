@@ -1,5 +1,4 @@
 ---
----
 
 @inproceedings{PhungT.PhungD:2021:LearningDomainInvariantRepresentationsTransferLearningMultipleSources,
 	abstract = {Domain adaptation (DA) benefits from the rigorous theoretical works that study its insightful characteristics and various aspects, e.g., learning domain-invariant representations and its trade-off. However, it seems not the case for the multiple source DA and domain generalization (DG) settings which are remarkably more complicated and sophisticated due to the involvement of multiple source domains and potential unavailability of target domain during training. In this paper, we develop novel upper-bounds for the target general loss which appeal us to define two kinds of domain-invariant representations. We further study the pros and cons as well as the trade-offs of enforcing learning each domain-invariant representation. Finally, we conduct experiments to inspect the trade-off of these representations for offering practical hints regarding how to use them in practice and explore other interesting properties of our developed theory.},
@@ -12,3 +11,14 @@
 	volume = {34},
   url = {https://proceedings.neurips.cc/paper/2021/hash/e9507053dd36cb9217816ffb566c8720-Abstract.html},
 	year = {2021}}
+
+@inproceedings{Phung.Lee.ea.2024.ZeroInflation,
+	abstract = {A common type of zero-inflated data has certain true values incorrectly replaced by zeros due to data recording conventions (rare outcomes assumed to be absent) or details of data recording equipment (e.g. artificial zeros in gene expression data). Existing methods for zero-inflated data either fit the observed data likelihood via parametric mixture models that explicitly represent excess zeros, or aim to replace excess zeros by imputed values. If the goal of the analysis relies on knowing true data realizations, a particular challenge with zero-inflated data is identifiability, since it is difficult to correctly determine which observed zeros are real and which are inflated. This paper views zero-inflated data as a general type of missing data problem, where the observability indicator for a potentially censored variable is itself unobserved whenever a zero is recorded. We show that, without additional assumptions, target parameters involving a zero-inflated variable are not identified. However, if a proxy of the missingness indicator is observed, a modification of the effect restoration approach of Kuroki and Pearl allows identification and estimation, given the proxy-indicator relationship is known. If this relationship is unknown, our approach yields a partial identification strategy for sensitivity analysis. Specifically, we show that only certain proxy-indicator relationships are compatible with the observed data distribution. We give an analytic bound for this relationship in cases with a categorical outcome, which is sharp in certain models. For more complex cases, sharp numerical bounds may be computed using methods in Duarte et al. [2023]. We illustrate our method via simulation studies and a data application on central line-associated bloodstream infections (CLABSIs).},
+	author = {Phung, Trung Q. and Lee, Jaron J. R. and {Oladapo-Shittu}, Opeyemi and Klein, Eili Y. and Gurses, Ayse Pinar and Hannum, Susan M. and Weems, Kimberly and Marsteller, Jill A. and Cosgrove, Sara E. and Keller, Sara C. and Shpitser, Ilya},
+	booktitle = {The 40th {{Conference}} on {{Uncertainty}} in {{Artificial Intelligence}}},
+	langid = {english},
+	month = jun,
+	shorttitle = {Zero {{Inflation}} as a {{Missing Data Problem}}},
+	title = {Zero {{Inflation}} as a {{Missing Data Problem}}: A {{Proxy-based Approach}}},
+	urldate = {2024-06-08},
+	year = {2024}}
